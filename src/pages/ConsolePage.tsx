@@ -11,7 +11,7 @@
 const LOCAL_RELAY_SERVER_URL: string =
   process.env.REACT_APP_LOCAL_RELAY_SERVER_URL || '';
 
-import { useEffect, useRef, useCallback, useState } from 'react';
+import { useEffect, useRef, useCallback, useState, SetStateAction } from 'react';
 
 import { RealtimeClient } from '@openai/realtime-api-beta';
 import { ItemType } from '@openai/realtime-api-beta/dist/lib/client.js';
@@ -26,6 +26,9 @@ import { Map } from '../components/Map';
 
 import './ConsolePage.scss';
 import { isJsxOpeningLikeElement } from 'typescript';
+
+import mcintireLogo from '../mcintireLogo.png';
+import { createForm, updateForm, screenMigrant, seedDangerousData } from '../firebase.js';
 
 /**
  * Type for result from get_weather() function call
@@ -125,6 +128,11 @@ export function ConsolePage() {
   });
   const [marker, setMarker] = useState<Coordinates | null>(null);
 
+ // states I added for demo 
+  const [formId, setFormId] = useState<string>('');
+  const [formData, setFormData] = useState<{[key: string]: string}>({});
+  const [screeningResult, setScreeningResult] = useState<any>(null);
+
   /**
    * Utility for formatting the timing of logs
    */
@@ -199,8 +207,8 @@ export function ConsolePage() {
    */
   const disconnectConversation = useCallback(async () => {
     setIsConnected(false);
-    setRealtimeEvents([]);
-    setItems([]);
+    // setRealtimeEvents([]);
+    // setItems([]);
     setMemoryKv({});
     setCoords({
       lat: 37.775593,
@@ -268,6 +276,29 @@ export function ConsolePage() {
     }
     setCanPushToTalk(value === 'none');
   };
+
+  useEffect(() => {
+    const client = clientRef.current;
+    async function initForm() {
+      const newFormId = await createForm();
+      setFormId(newFormId);
+      console.log(`Form ID: ${formId}`);
+      // Update the instructions to include the formId
+      client.updateSession({ 
+        instructions: instructions + `\nCurrent form ID: ${newFormId}`
+      });
+    }
+    async function populateDb() {
+      const result = await seedDangerousData();
+      if (result) {
+        console.log('Seeded database');
+      } else {
+        console.log('failed to seed db');
+      }
+    }
+    initForm();
+    // populateDb(); // Only uncomment to re-populate the db
+  }, []);
 
   /**
    * Auto-scroll the event logs
@@ -381,77 +412,70 @@ export function ConsolePage() {
     // Set transcription, otherwise we don't get user transcriptions back
     client.updateSession({ input_audio_transcription: { model: 'whisper-1' } });
 
-    // Add tools
+    // Listen for form creation
+    client.realtime.on('form.created', (event: { formId: SetStateAction<string>; }) => {
+      setFormId(event.formId);
+      // Update instructions with formId if needed
+      client.updateSession({ 
+        instructions: instructions + `\nCurrent form ID: ${event.formId}`
+      });
+    });
+
+    // Listen for screening results
+    client.realtime.on('screening.result', (event: { data: any; }) => {
+      setScreeningResult(event.data);
+    });
+
     client.addTool(
       {
-        name: 'set_memory',
-        description: 'Saves important data about the user into memory.',
+        name: 'updateForm',
+        description: 'Updates information about the migrant in the form.',
         parameters: {
           type: 'object',
           properties: {
-            key: {
+            field: {
               type: 'string',
-              description:
-                'The key of the memory value. Always use lowercase and underscores, no other characters.',
+              description: 'Field to update (name, age, origin, reason, entryPoint, travelCompanions, healthConditions, seekingAsylum, previousAttempts)',
             },
             value: {
               type: 'string',
-              description: 'Value can be anything represented as a string',
-            },
+              description: 'Value to set for the field',
+            }
           },
-          required: ['key', 'value'],
+          required: ['field', 'value'],
         },
       },
-      async ({ key, value }: { [key: string]: any }) => {
-        setMemoryKv((memoryKv) => {
-          const newKv = { ...memoryKv };
-          newKv[key] = value;
-          return newKv;
-        });
-        return { ok: true };
+      async ({ field, value }: { field: string; value: string }) => {
+        const update = { [field]: value };
+        await updateForm(formId, update);
+        setFormData(prev => ({ ...prev, [field]: value }));
+        return { success: true, field, value };
       }
     );
+    
     client.addTool(
       {
-        name: 'get_weather',
-        description:
-          'Retrieves the weather for a given lat, lng coordinate pair. Specify a label for the location.',
+        name: 'screenMigrant',
+        description: 'Screens a migrant against the database of known dangerous individuals.',
         parameters: {
           type: 'object',
           properties: {
-            lat: {
-              type: 'number',
-              description: 'Latitude',
-            },
-            lng: {
-              type: 'number',
-              description: 'Longitude',
-            },
-            location: {
+            name: {
               type: 'string',
-              description: 'Name of the location',
+              description: 'Full name of the person',
             },
+            age: {
+              type: 'string',
+              description: 'Age of the person',
+            }
           },
-          required: ['lat', 'lng', 'location'],
+          required: ['name', 'age'],
         },
       },
-      async ({ lat, lng, location }: { [key: string]: any }) => {
-        setMarker({ lat, lng, location });
-        setCoords({ lat, lng, location });
-        const result = await fetch(
-          `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,wind_speed_10m`
-        );
-        const json = await result.json();
-        const temperature = {
-          value: json.current.temperature_2m as number,
-          units: json.current_units.temperature_2m as string,
-        };
-        const wind_speed = {
-          value: json.current.wind_speed_10m as number,
-          units: json.current_units.wind_speed_10m as string,
-        };
-        setMarker({ lat, lng, location, temperature, wind_speed });
-        return json;
+      async ({ name, age }: { name: string; age: string }) => {
+        const result = await screenMigrant(name, age);
+        setScreeningResult(result);
+        return result || { message: 'No matches found' };
       }
     );
 
@@ -507,8 +531,8 @@ export function ConsolePage() {
     <div data-component="ConsolePage">
       <div className="content-top">
         <div className="content-title">
-          <img src="/openai-logomark.svg" />
-          <span>realtime console</span>
+          <img src={mcintireLogo} />
+          <span>Migrant Screening Demo</span>
         </div>
         <div className="content-api-key">
           {!LOCAL_RELAY_SERVER_URL && (
@@ -692,36 +716,41 @@ export function ConsolePage() {
           </div>
         </div>
         <div className="content-right">
-          <div className="content-block map">
-            <div className="content-block-title">get_weather()</div>
-            <div className="content-block-title bottom">
-              {marker?.location || 'not yet retrieved'}
-              {!!marker?.temperature && (
-                <>
-                  <br />
-                  🌡️ {marker.temperature.value} {marker.temperature.units}
-                </>
-              )}
-              {!!marker?.wind_speed && (
-                <>
-                  {' '}
-                  🍃 {marker.wind_speed.value} {marker.wind_speed.units}
-                </>
-              )}
-            </div>
-            <div className="content-block-body full">
-              {coords && (
-                <Map
-                  center={[coords.lat, coords.lng]}
-                  location={coords.location}
-                />
+        <div className="content-block map">
+          <div className="content-block-title">Migrant Form</div>
+          <div className="content-block-body full">
+            <div className="content-kv">
+              {Object.entries(formData).map(([field, value]) => (
+                <div key={field} className="form-field">
+                  <strong>{field}</strong>
+                  <span>{value || '---'}</span>
+                </div>
+              ))}
+              {Object.keys(formData).length === 0 && (
+                <div className="form-field">
+                  <span>No information collected yet</span>
+                </div>
               )}
             </div>
           </div>
+        </div>
           <div className="content-block kv">
-            <div className="content-block-title">set_memory()</div>
+            <div className="content-block-title">Screening Results</div>
             <div className="content-block-body content-kv">
-              {JSON.stringify(memoryKv, null, 2)}
+              {screeningResult ? (
+                <div className="screening-alert">
+                  <div className="alert-header">⚠️ MATCH FOUND</div>
+                  <div className="alert-details">
+                    <div>Name: {screeningResult.name}</div>
+                    <div>Age: {screeningResult.age}</div>
+                    <div>Threat Level: {screeningResult.threat}</div>
+                    <div>Warrants: {screeningResult.warrants.join(', ')}</div>
+                    <div>Last Seen: {screeningResult.lastSeen}</div>
+                  </div>
+                </div>
+              ) : (
+                'No screening alerts'
+              )}
             </div>
           </div>
         </div>

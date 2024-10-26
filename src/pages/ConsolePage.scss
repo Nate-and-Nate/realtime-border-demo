@@ -71,13 +71,17 @@
       display: flex;
       flex-direction: column;
       margin-left: 24px;
+      margin-right: 10px;
       gap: 24px;
+      
       & > div {
         border-radius: 16px;
         flex-grow: 1;
         flex-shrink: 0;
         overflow: hidden;
         position: relative;
+        background-color: #f8f8f8;  // Lighter background for contrast
+        
         .content-block-title {
           position: absolute;
           display: flex;
@@ -93,21 +97,75 @@
           z-index: 9999;
           text-align: center;
           white-space: pre;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);  // Added subtle shadow
+          
           &.bottom {
             top: auto;
             bottom: 16px;
             right: 16px;
           }
         }
+        
+        .content-block-body {
+          margin-top: 70px;  // Give more space below title
+          padding: 0 16px 16px 16px;
+          
+          .content-kv {
+            .form-field {
+              background: white;
+              padding: 12px;
+              margin-bottom: 8px;
+              border-radius: 8px;
+              border: 1px solid #e0e0e0;
+              display: flex;
+              align-items: center;
+              
+              strong {
+                flex: 0 0 120px;
+                font-weight: 600;
+                color: #333;
+                text-transform: capitalize;
+              }
+              
+              span {
+                flex: 1;
+                color: #666;
+              }
+            }
+          }
+        }
       }
+      
       & > div.kv {
         height: 250px;
         max-height: 250px;
-        white-space: pre;
         background-color: #ececf1;
+        
         .content-block-body {
           padding: 16px;
           margin-top: 56px;
+          
+          .screening-alert {
+            background-color: #fff0f0;
+            border-radius: 8px;
+            padding: 12px;
+            border: 2px solid #ff4444;
+            margin-top: 8px;
+    
+            .alert-header {
+              color: #cc0000;
+              font-weight: 600;
+              font-size: 16px;
+              margin-bottom: 8px;
+            }
+    
+            .alert-details {
+              div {
+                margin-bottom: 4px;
+                color: #2a2a2a;
+              }
+            }
+          }
         }
       }
     }
