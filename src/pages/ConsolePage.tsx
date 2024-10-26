@@ -22,13 +22,13 @@ import { WavRenderer } from '../utils/wav_renderer';
 import { X, Edit, Zap, ArrowUp, ArrowDown } from 'react-feather';
 import { Button } from '../components/button/Button';
 import { Toggle } from '../components/toggle/Toggle';
-import { Map } from '../components/Map';
 
 import './ConsolePage.scss';
 import { isJsxOpeningLikeElement } from 'typescript';
 
 import mcintireLogo from '../mcintireLogo.png';
-import { createForm, updateForm, screenMigrant, seedDangerousData } from '../firebase.js';
+import { createForm, updateForm, screenMigrant, seedDangerousData, getLatestFormId } from '../firebase.js';
+import { where } from 'firebase/firestore';
 
 /**
  * Type for result from get_weather() function call
@@ -132,6 +132,23 @@ export function ConsolePage() {
   const [formId, setFormId] = useState<string>('');
   const [formData, setFormData] = useState<{[key: string]: string}>({});
   const [screeningResult, setScreeningResult] = useState<any>(null);
+
+  // Fetch latest form ID on component mount
+  useEffect(() => {
+    async function initForm() {
+      const latestFormId = await getLatestFormId();
+      console.log(`Lastest formID: ${latestFormId}`);
+      setFormId(latestFormId);
+      
+      // Update instructions with form ID
+      const client = clientRef.current;
+      client.updateSession({ 
+        instructions: instructions + `\nCurrent form ID: ${latestFormId}`
+      });
+    }
+    
+    initForm();
+  }, []);
 
   /**
    * Utility for formatting the timing of logs
@@ -447,7 +464,7 @@ export function ConsolePage() {
       },
       async ({ field, value }: { field: string; value: string }) => {
         const update = { [field]: value };
-        await updateForm(formId, update);
+        await updateForm(update);
         setFormData(prev => ({ ...prev, [field]: value }));
         return { success: true, field, value };
       }

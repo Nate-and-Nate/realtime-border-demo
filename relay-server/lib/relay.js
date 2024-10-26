@@ -57,14 +57,7 @@ export class RealtimeRelay {
         },
       },
       async ({ field, value }) => {
-        try {
-          const update = { [field]: value };
-          await updateForm(formId, update); // Using formId from closure
-          return { success: true, field, value };
-        } catch (error) {
-          console.error('Error updating form:', error);
-          return { success: false, error: error.message };
-        }
+        return true;
       }
     );
     
@@ -88,18 +81,7 @@ export class RealtimeRelay {
         },
       },
       async ({ name, age }) => {
-        try {
-          const result = await screenMigrant(name, age);
-          // Send screening result back to client
-          ws.send(JSON.stringify({
-            type: 'screening.result',
-            data: result || { message: 'No matches found' }
-          }));
-          return result || { message: 'No matches found' };
-        } catch (error) {
-          console.error('Error screening migrant:', error);
-          return { success: false, error: error.message };
-        }
+        return true;
       }
     );
 

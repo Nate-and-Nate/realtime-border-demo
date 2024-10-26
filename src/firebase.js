@@ -1,6 +1,6 @@
 // Initialize Firebase (add to your existing initialization)
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, doc, setDoc, updateDoc, query, where, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, doc, setDoc, updateDoc, query, where, getDocs, getDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDe8kFbFqiF8ebXQvhXpVGPGTT6kfe_0ts",
@@ -17,35 +17,53 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Function 1: Create a new form
+// Create a form and store its ID as the latest
 export async function createForm() {
-  const timestamp = Date.now();
-  const formId = `form_${timestamp}`;
-  const formRef = doc(collection(db, 'forms'), formId);
+    const timestamp = Date.now();
+    const formId = `form_${timestamp}`;
+    const formRef = doc(collection(db, 'forms'), formId);
+    
+    await setDoc(formRef, {
+      created: timestamp,
+      name: '',
+      age: '',
+      origin: '',
+      reason: '',
+      entryPoint: '',
+      travelCompanions: '',
+      healthConditions: '',
+      seekingAsylum: '',
+      previousAttempts: ''
+    });
   
-  await setDoc(formRef, {
-    created: timestamp,
-    // Initialize empty fields
-    name: '',
-    age: '',
-    origin: '',
-    reason: '',
-    entryPoint: '',
-    travelCompanions: '',
-    healthConditions: '',
-    seekingAsylum: '',
-    previousAttempts: '',
-    // Add more fields as needed
-  });
+    // Store this as the latest form ID
+    const latestRef = doc(db, 'system', 'latest');
+    await setDoc(latestRef, { latestFormId: formId });
+    
+    return formId;
+  }
   
-  return formId;
-}
-
-// Function 2: Update form fields
-export async function updateForm(formId, updates) {
-  const formRef = doc(collection(db, 'forms'), formId);
-  await updateDoc(formRef, updates);
-  return true;
-}
+  // Get the latest form ID
+  export async function getLatestFormId() {
+    const latestRef = doc(db, 'system', 'latest');
+    const docSnap = await getDoc(latestRef);
+    
+    if (docSnap.exists()) {
+      return docSnap.data().latestFormId;
+    }
+    
+    // If no latest form exists, create one
+    const newFormId = await createForm();
+    return newFormId;
+  }
+  
+  // Update the form with the latest ID
+  export async function updateForm(updates) {
+    const formId = await getLatestFormId();
+    const formRef = doc(collection(db, 'forms'), formId);
+    await updateDoc(formRef, updates);
+    return true;
+  }
 
 // Function 3: Screen migrant against database
 export async function screenMigrant(name, age) {
