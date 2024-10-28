@@ -24,7 +24,6 @@ import { Button } from '../components/button/Button';
 import { Toggle } from '../components/toggle/Toggle';
 
 import './ConsolePage.scss';
-import { isJsxOpeningLikeElement } from 'typescript';
 
 import mcintireLogo from '../mcintireLogo.png';
 import { createForm, updateForm, screenMigrant, seedDangerousData, getLatestFormId } from '../firebase.js';
@@ -132,6 +131,7 @@ export function ConsolePage() {
   const [formId, setFormId] = useState<string>('');
   const [formData, setFormData] = useState<{[key: string]: string}>({});
   const [screeningResult, setScreeningResult] = useState<any>(null);
+  const [screeningDone, setScreeningDone] = useState<boolean>(false);
 
   // Fetch latest form ID on component mount
   useEffect(() => {
@@ -209,7 +209,7 @@ export function ConsolePage() {
     client.sendUserMessageContent([
       {
         type: `input_text`,
-        text: `Hello!`,
+        text: `Start the interview!`,
         // text: `For testing purposes, I want you to list ten car brands. Number each item, e.g. "one (or whatever number you are one): the item name".`
       },
     ]);
@@ -295,16 +295,6 @@ export function ConsolePage() {
   };
 
   useEffect(() => {
-    const client = clientRef.current;
-    async function initForm() {
-      const newFormId = await createForm();
-      setFormId(newFormId);
-      console.log(`Form ID: ${formId}`);
-      // Update the instructions to include the formId
-      client.updateSession({ 
-        instructions: instructions + `\nCurrent form ID: ${newFormId}`
-      });
-    }
     async function populateDb() {
       const result = await seedDangerousData();
       if (result) {
@@ -313,7 +303,6 @@ export function ConsolePage() {
         console.log('failed to seed db');
       }
     }
-    initForm();
     // populateDb(); // Only uncomment to re-populate the db
   }, []);
 
@@ -492,6 +481,7 @@ export function ConsolePage() {
       async ({ name, age }: { name: string; age: string }) => {
         const result = await screenMigrant(name, age);
         setScreeningResult(result);
+        setScreeningDone(true);
         return result || { message: 'No matches found' };
       }
     );
@@ -549,7 +539,7 @@ export function ConsolePage() {
       <div className="content-top">
         <div className="content-title">
           <img src={mcintireLogo} />
-          <span>Migrant Screening Demo</span>
+          <span>Asylum Seeker Interview Demo</span>
         </div>
         <div className="content-api-key">
           {!LOCAL_RELAY_SERVER_URL && (
@@ -734,7 +724,7 @@ export function ConsolePage() {
         </div>
         <div className="content-right">
         <div className="content-block map">
-          <div className="content-block-title">Migrant Form</div>
+          <div className="content-block-title">Asylum Seeker Form</div>
           <div className="content-block-body full">
             <div className="content-kv">
               {Object.entries(formData).map(([field, value]) => (
@@ -754,7 +744,7 @@ export function ConsolePage() {
           <div className="content-block kv">
             <div className="content-block-title">Screening Results</div>
             <div className="content-block-body content-kv">
-              {screeningResult ? (
+              {screeningResult && screeningDone ? (
                 <div className="screening-alert">
                   <div className="alert-header">⚠️ MATCH FOUND</div>
                   <div className="alert-details">
@@ -766,7 +756,7 @@ export function ConsolePage() {
                   </div>
                 </div>
               ) : (
-                'No screening alerts'
+                'Not screened yet'
               )}
             </div>
           </div>
