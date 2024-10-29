@@ -64,7 +64,7 @@ export class RealtimeRelay {
     client.addTool(
       {
         name: 'screenMigrant',
-        description: 'Screens a migrant against the database of known dangerous individuals.',
+        description: 'Screens a migrant against the database of known dangerous individuals. It should be used once the name and age have been collected.',
         parameters: {
           type: 'object',
           properties: {

@@ -209,7 +209,7 @@ export function ConsolePage() {
     client.sendUserMessageContent([
       {
         type: `input_text`,
-        text: `Start the interview!`,
+        text: `Start the interview and don't forget to use the screenMigrant tool!!!`,
         // text: `For testing purposes, I want you to list ten car brands. Number each item, e.g. "one (or whatever number you are one): the item name".`
       },
     ]);
@@ -462,7 +462,7 @@ export function ConsolePage() {
     client.addTool(
       {
         name: 'screenMigrant',
-        description: 'Screens a migrant against the database of known dangerous individuals.',
+        description: 'Screens a migrant against the database of known dangerous individuals. It should be used once the name and age have been collected.',
         parameters: {
           type: 'object',
           properties: {
