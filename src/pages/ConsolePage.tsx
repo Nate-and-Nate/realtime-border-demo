@@ -741,25 +741,41 @@ export function ConsolePage() {
             </div>
           </div>
         </div>
-          <div className="content-block kv">
-            <div className="content-block-title">Screening Results</div>
-            <div className="content-block-body content-kv">
-              {screeningResult && screeningDone ? (
-                <div className="screening-alert">
-                  <div className="alert-header">⚠️ MATCH FOUND</div>
-                  <div className="alert-details">
-                    <div>Name: {screeningResult.name}</div>
-                    <div>Age: {screeningResult.age}</div>
-                    <div>Threat Level: {screeningResult.threat}</div>
-                    <div>Warrants: {screeningResult.warrants.join(', ')}</div>
-                    <div>Last Seen: {screeningResult.lastSeen}</div>
-                  </div>
+        <div className="content-block kv">
+          <div className="content-block-title">Screening Results</div>
+          <div className="content-block-body content-kv">
+            {!screeningDone ? (
+              <div className="screening-pending">
+                <div className="alert-header">⚠️ Screening Incomplete</div>
+                <div className="alert-details">
+                  Waiting for name and age to perform screening...
                 </div>
-              ) : (
-                'Not screened yet'
-              )}
-            </div>
+              </div>
+            ) : screeningResult && screeningResult.name ? (
+              <div className="screening-alert danger">
+                <div className="alert-header">⚠️ MATCH FOUND</div>
+                <div className="alert-details">
+                  <div>Name: {screeningResult.name}</div>
+                  <div>Age: {screeningResult.age}</div>
+                  <div>Threat Level: {screeningResult.threat}</div>
+                  <div>Warrants: {screeningResult.warrants.join(', ')}</div>
+                  <div>Last Seen: {screeningResult.lastSeen}</div>
+                </div>
+              </div>
+            ) : (
+              <div className="screening-alert success" style={{ 
+                border: '2px solid #00d000',
+                backgroundColor: '#e6ffe6',
+                color: '#000000'
+              }}>
+                <div style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: 10 }}>✓ NO MATCHES FOUND</div>
+                <div className="alert-details">
+                  Individual has been screened and cleared
+                </div>
+              </div>
+            )}
           </div>
+        </div>
         </div>
       </div>
     </div>
