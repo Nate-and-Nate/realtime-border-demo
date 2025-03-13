@@ -30,7 +30,7 @@ export class WavStreamPlayer {
      * @param {number} [maxDecibels] default -30
      * @returns {import('./analysis/audio_analysis.js').AudioAnalysisOutputType}
      */
-    getFrequencies(analysisType?: "frequency" | "music" | "voice", minDecibels?: number, maxDecibels?: number): import("./analysis/audio_analysis.js").AudioAnalysisOutputType;
+    getFrequencies(analysisType?: "frequency" | "music" | "voice", minDecibels?: number, maxDecibels?: number): import("../../lib/analysis/audio_analysis.js").AudioAnalysisOutputType;
     /**
      * Starts audio streaming
      * @private

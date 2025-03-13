@@ -17,11 +17,11 @@ import { RealtimeClient } from '@openai/realtime-api-beta';
 import { ItemType } from '@openai/realtime-api-beta/dist/lib/client.js';
 import { WavRecorder, WavStreamPlayer } from '../lib/wavtools/index.js';
 import { instructions } from '../utils/conversation_config.js';
-import { WavRenderer } from '../utils/wav_renderer';
+import { WavRenderer } from '../utils/wav_renderer.js';
 
 import { X, Edit, Zap, ArrowUp, ArrowDown } from 'react-feather';
-import { Button } from '../components/button/Button';
-import { Toggle } from '../components/toggle/Toggle';
+import { Button } from '../components/button/Button.js';
+import { Toggle } from '../components/toggle/Toggle.js';
 
 import './ConsolePage.scss';
 

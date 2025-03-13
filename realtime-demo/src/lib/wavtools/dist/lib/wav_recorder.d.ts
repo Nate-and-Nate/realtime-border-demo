@@ -106,7 +106,7 @@ export class WavRecorder {
      * @param {number} [maxDecibels] default -30
      * @returns {import('./analysis/audio_analysis.js').AudioAnalysisOutputType}
      */
-    getFrequencies(analysisType?: "frequency" | "music" | "voice", minDecibels?: number, maxDecibels?: number): import("./analysis/audio_analysis.js").AudioAnalysisOutputType;
+    getFrequencies(analysisType?: "frequency" | "music" | "voice", minDecibels?: number, maxDecibels?: number): import("../../lib/analysis/audio_analysis.js").AudioAnalysisOutputType;
     /**
      * Pauses the recording
      * Keeps microphone stream open but halts storage of audio
@@ -142,12 +142,12 @@ export class WavRecorder {
      * @param {boolean} [force] Force saving while still recording
      * @returns {Promise<import('./wav_packer.js').WavPackerAudioType>}
      */
-    save(force?: boolean): Promise<import("./wav_packer.js").WavPackerAudioType>;
+    save(force?: boolean): Promise<import("../../lib/wav_packer.js").WavPackerAudioType>;
     /**
      * Ends the current recording session and saves the result
      * @returns {Promise<import('./wav_packer.js').WavPackerAudioType>}
      */
-    end(): Promise<import("./wav_packer.js").WavPackerAudioType>;
+    end(): Promise<import("../../lib/wav_packer.js").WavPackerAudioType>;
     /**
      * Performs a full cleanup of WavRecorder instance
      * Stops actively listening via microphone and removes existing listeners
