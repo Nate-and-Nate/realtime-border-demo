@@ -5,12 +5,13 @@ import { getFirestore, collection, getDocs, doc, getDoc, query, where, limit, or
 // Your web app's Firebase configuration
 // For a demo, you would replace this with your actual Firebase config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "your-project-id.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project-id.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDe8kFbFqiF8ebXQvhXpVGPGTT6kfe_0ts",
+  authDomain: "border-demo-70326.firebaseapp.com",
+  projectId: "border-demo-70326",
+  storageBucket: "border-demo-70326.firebasestorage.app",
+  messagingSenderId: "805199937812",
+  appId: "1:805199937812:web:9f0c1542e8edc7a7bf8201",
+  measurementId: "G-KYJDMDE02W"
 };
 
 // Initialize Firebase

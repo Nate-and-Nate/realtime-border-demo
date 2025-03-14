@@ -22,73 +22,46 @@ const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai
  */
 export const generateInterviewSummary = async (transcript, metadata) => {
   try {
-    // In a real application, you would make an API call to OpenAI
-    // For this demo, we'll simulate the API call
-    
     console.log("Generating summary for case: ", metadata.case_id);
     
-    // Simulate API delay
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // Cloud function URL - replace with your actual URL after deployment
+    const functionUrl = "https://us-central1-border-demo-70326.cloudfunctions.net/generate_summary";
     
-    // For a real implementation, you would use:
-    /*
-    const response = await fetch(`${OPENAI_BASE_URL}/chat/completions`, {
+    // Call the cloud function
+    const response = await fetch(functionUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${OPENAI_API_KEY}`
       },
       body: JSON.stringify({
-        model: 'gpt-4',
-        messages: [
-          {
-            role: 'system',
-            content: 'You are an expert immigration analyst. Summarize the following asylum interview transcript concisely, highlighting key claims, credibility factors, and relevant details for determining asylum eligibility.'
-          },
-          {
-            role: 'user',
-            content: `Please summarize this asylum interview transcript for case ${metadata.case_id}:\n\n${transcript}`
-          }
-        ],
-        temperature: 0.3,
-        max_tokens: 1000
+        case_id: metadata.case_id
       })
     });
     
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`API Error: ${errorData.error || response.statusText}`);
+    }
+    
     const data = await response.json();
     return {
-      summary: data.choices[0].message.content,
+      summary: data.summary,
       model: data.model,
-      completionTokens: data.usage.completion_tokens,
-      promptTokens: data.usage.prompt_tokens
-    };
-    */
-    
-    // Return mock data for demo
-    return {
-      summary: `This is a summary of the asylum interview for case ${metadata.case_id}. 
-      
-The applicant is a ${metadata.applicant_age}-year-old ${metadata.applicant_gender} from ${metadata.country_of_origin} seeking asylum based on ${metadata.grounds_for_persecution}. The applicant has a ${metadata.applicant_education} and background in ${metadata.applicant_profession}.
-
-Key claims:
-- Faced persecution due to [specific details that would be extracted from transcript]
-- Attempted to relocate within country but [details from transcript]
-- Cannot return because [reasons from transcript]
-
-Credibility assessment:
-- The applicant provided [consistent/inconsistent] testimony about key events
-- [Details about documentation provided]
-- [Notes about demeanor during interview]
-
-The asylum officer ${metadata.asylum_officer_id} conducted the interview on ${metadata.interview_date}. The decision was made on ${metadata.decision_date} to ${metadata.decision_outcome.toLowerCase()} the application.`,
-      model: "gpt-4",
-      completionTokens: 350,
-      promptTokens: 1200,
-      timestamp: new Date().toISOString()
+      completionTokens: data.completionTokens,
+      promptTokens: data.promptTokens,
+      timestamp: data.timestamp || new Date().toISOString()
     };
   } catch (error) {
     console.error("Error generating summary:", error);
-    throw new Error("Failed to generate interview summary");
+    
+    // Fallback to avoid breaking the UI
+    return {
+      summary: `This is a fallback summary for case ${metadata.case_id}. The API request failed with error: ${error.message}. Please try again later.`,
+      model: "error-fallback",
+      completionTokens: 0,
+      promptTokens: 0,
+      timestamp: new Date().toISOString()
+    };
   }
 };
 

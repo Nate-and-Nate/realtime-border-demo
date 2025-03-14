@@ -1,0 +1,3 @@
+*.local
+.env.border-demo-70326
+venv
