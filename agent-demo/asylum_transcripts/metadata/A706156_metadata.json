@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Syria",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-03-22",
+  "decision_date": "2024-08-09",
+  "case_id": "A706156",
+  "applicant_gender": "male",
+  "applicant_age": 42,
+  "applicant_education": "Doctoral degree",
+  "applicant_profession": "Arts/Culture",
+  "languages": {
+    "Syria": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Syria",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 32,
+  "asylum_officer_id": "AO-1177",
+  "immigration_judge_id": null
+}

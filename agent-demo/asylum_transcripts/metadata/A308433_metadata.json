@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-11-14",
+  "decision_date": "2025-04-10",
+  "case_id": "A308433",
+  "applicant_gender": "male",
+  "applicant_age": 54,
+  "applicant_education": "Primary education",
+  "applicant_profession": "STEM",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Fluent",
+    "Portuguese": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": true,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 2,
+  "years_in_origin_country": 48,
+  "asylum_officer_id": "AO-6972",
+  "immigration_judge_id": null
+}

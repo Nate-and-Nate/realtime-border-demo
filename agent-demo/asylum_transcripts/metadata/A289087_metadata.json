@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Haiti",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-08-21",
+  "decision_date": "2022-10-28",
+  "case_id": "A289087",
+  "applicant_gender": "female",
+  "applicant_age": 65,
+  "applicant_education": "Master's degree",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Haiti": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 6,
+  "years_in_origin_country": 61,
+  "asylum_officer_id": "AO-5408",
+  "immigration_judge_id": null
+}

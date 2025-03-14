@@ -1,0 +1,31 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Nicaragua",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-04-06",
+  "decision_date": "2024-05-03",
+  "case_id": "A390507",
+  "applicant_gender": "male",
+  "applicant_age": 32,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Nicaragua": "Native",
+    "English": "Advanced",
+    "Arabic": "Fluent",
+    "Spanish": "Basic"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Critical skill shortage area",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 4,
+  "years_in_origin_country": 27,
+  "asylum_officer_id": "AO-5566",
+  "immigration_judge_id": null
+}

@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Venezuela",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-07-28",
+  "decision_date": "2022-08-17",
+  "case_id": "A142873",
+  "applicant_gender": "male",
+  "applicant_age": 46,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Government/Military",
+  "languages": {
+    "Venezuela": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Venezuela",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 36,
+  "asylum_officer_id": "AO-8474",
+  "immigration_judge_id": "IJ-403"
+}

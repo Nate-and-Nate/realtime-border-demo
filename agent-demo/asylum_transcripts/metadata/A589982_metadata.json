@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "El Salvador",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-03-18",
+  "decision_date": "2023-08-15",
+  "case_id": "A589982",
+  "applicant_gender": "male",
+  "applicant_age": 58,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Government/Military",
+  "languages": {
+    "El Salvador": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Critical skill shortage area",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 51,
+  "asylum_officer_id": "AO-7667",
+  "immigration_judge_id": null
+}

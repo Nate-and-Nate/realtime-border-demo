@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Colombia",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Referred to Immigration Court",
+  "interview_date": "2022-11-09",
+  "decision_date": "2023-02-05",
+  "case_id": "A241134",
+  "applicant_gender": "female",
+  "applicant_age": 40,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Colombia": "Native",
+    "Portuguese": "Basic"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "Colombia",
+  "special_consideration": "Prior legal status in country",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 37,
+  "asylum_officer_id": "AO-9921",
+  "immigration_judge_id": null
+}

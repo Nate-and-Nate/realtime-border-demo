@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Cuba",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Denied",
+  "interview_date": "2022-12-24",
+  "decision_date": "2023-04-09",
+  "case_id": "A916544",
+  "applicant_gender": "female",
+  "applicant_age": 51,
+  "applicant_education": "No formal education",
+  "applicant_profession": "STEM",
+  "languages": {
+    "Cuba": "Native",
+    "English": "Intermediate"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Critical skill shortage area",
+  "has_stem_background": true,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 2,
+  "years_in_origin_country": 44,
+  "asylum_officer_id": "AO-4029",
+  "immigration_judge_id": "IJ-498"
+}

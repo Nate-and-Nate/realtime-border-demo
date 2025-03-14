@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Syria",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-07-04",
+  "decision_date": "2023-12-14",
+  "case_id": "A483636",
+  "applicant_gender": "non-binary",
+  "applicant_age": 61,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Syria": "Native",
+    "English": "Intermediate"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 52,
+  "asylum_officer_id": "AO-1695",
+  "immigration_judge_id": null
+}

@@ -1,0 +1,30 @@
+{
+  "case_type": "Credible Fear Interview",
+  "country_of_origin": "Guatemala",
+  "grounds_for_persecution": "Nationality",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-12-09",
+  "decision_date": "2025-01-20",
+  "case_id": "A964818",
+  "applicant_gender": "non-binary",
+  "applicant_age": 48,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Agriculture/Farming",
+  "languages": {
+    "Guatemala": "Native",
+    "English": "Intermediate",
+    "Mandarin": "Advanced"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Critical skill shortage area",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 2,
+  "years_in_origin_country": 46,
+  "asylum_officer_id": "AO-5915",
+  "immigration_judge_id": null
+}

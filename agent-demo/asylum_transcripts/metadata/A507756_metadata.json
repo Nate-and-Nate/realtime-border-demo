@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Myanmar",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-08-06",
+  "decision_date": "2024-10-31",
+  "case_id": "A507756",
+  "applicant_gender": "male",
+  "applicant_age": 59,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "STEM",
+  "languages": {
+    "Myanmar": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": true,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 5,
+  "years_in_origin_country": 58,
+  "asylum_officer_id": "AO-3347",
+  "immigration_judge_id": null
+}

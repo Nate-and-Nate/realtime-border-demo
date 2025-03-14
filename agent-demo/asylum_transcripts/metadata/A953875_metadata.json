@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "China",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-04-08",
+  "decision_date": "2022-06-05",
+  "case_id": "A953875",
+  "applicant_gender": "non-binary",
+  "applicant_age": 36,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "China": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Human rights activist",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 4,
+  "years_in_origin_country": 32,
+  "asylum_officer_id": "AO-2872",
+  "immigration_judge_id": "IJ-953"
+}

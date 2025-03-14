@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-09-14",
+  "decision_date": "2023-01-26",
+  "case_id": "A152530",
+  "applicant_gender": "male",
+  "applicant_age": 27,
+  "applicant_education": "Doctoral degree",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Intermediate"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 3,
+  "years_in_origin_country": 23,
+  "asylum_officer_id": "AO-7769",
+  "immigration_judge_id": "IJ-852"
+}

@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Afghanistan",
+  "grounds_for_persecution": "Nationality",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-02-19",
+  "decision_date": "2024-03-17",
+  "case_id": "A660173",
+  "applicant_gender": "male",
+  "applicant_age": 65,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Healthcare",
+  "languages": {
+    "Afghanistan": "Native",
+    "English": "Basic",
+    "Mandarin": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Afghanistan",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": true,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 6,
+  "years_in_origin_country": 63,
+  "asylum_officer_id": "AO-8000",
+  "immigration_judge_id": null
+}

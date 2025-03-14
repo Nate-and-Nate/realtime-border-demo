@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-08-20",
+  "decision_date": "2025-02-12",
+  "case_id": "A778859",
+  "applicant_gender": "non-binary",
+  "applicant_age": 28,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 28,
+  "asylum_officer_id": "AO-5863",
+  "immigration_judge_id": "IJ-113"
+}

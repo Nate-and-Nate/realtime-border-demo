@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Haiti",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-06-29",
+  "decision_date": "2023-10-07",
+  "case_id": "A551968",
+  "applicant_gender": "female",
+  "applicant_age": 48,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Haiti": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 5,
+  "years_in_origin_country": 45,
+  "asylum_officer_id": "AO-4658",
+  "immigration_judge_id": null
+}

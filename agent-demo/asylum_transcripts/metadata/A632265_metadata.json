@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Haiti",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-07-28",
+  "decision_date": "2023-10-31",
+  "case_id": "A632265",
+  "applicant_gender": "non-binary",
+  "applicant_age": 42,
+  "applicant_education": "No formal education",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Haiti": "Native",
+    "English": "Intermediate"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 40,
+  "asylum_officer_id": "AO-8077",
+  "immigration_judge_id": "IJ-941"
+}

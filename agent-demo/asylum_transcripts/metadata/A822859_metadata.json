@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Cuba",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-09-29",
+  "decision_date": "2024-11-12",
+  "case_id": "A822859",
+  "applicant_gender": "male",
+  "applicant_age": 52,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Education",
+  "languages": {
+    "Cuba": "Native",
+    "English": "Fluent",
+    "Mandarin": "Basic"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Prior legal status in country",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 47,
+  "asylum_officer_id": "AO-8835",
+  "immigration_judge_id": null
+}

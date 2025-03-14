@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Myanmar",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Referred to Immigration Court",
+  "interview_date": "2023-04-12",
+  "decision_date": "2023-08-16",
+  "case_id": "A474690",
+  "applicant_gender": "non-binary",
+  "applicant_age": 60,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Myanmar": "Native",
+    "English": "Intermediate"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 60,
+  "asylum_officer_id": "AO-1319",
+  "immigration_judge_id": null
+}

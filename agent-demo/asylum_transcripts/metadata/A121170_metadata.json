@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Ukraine",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2025-03-07",
+  "decision_date": "2025-08-12",
+  "case_id": "A121170",
+  "applicant_gender": "non-binary",
+  "applicant_age": 26,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Arts/Culture",
+  "languages": {
+    "Ukraine": "Native",
+    "Spanish": "Basic"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "Ukraine",
+  "special_consideration": "Cooperation with allied forces",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 22,
+  "asylum_officer_id": "AO-7556",
+  "immigration_judge_id": null
+}

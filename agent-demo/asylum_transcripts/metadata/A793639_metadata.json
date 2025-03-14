@@ -1,0 +1,30 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Cuba",
+  "grounds_for_persecution": "Gender-based violence",
+  "decision_outcome": "Administrative Closure",
+  "interview_date": "2023-12-25",
+  "decision_date": "2024-01-25",
+  "case_id": "A793639",
+  "applicant_gender": "female",
+  "applicant_age": 23,
+  "applicant_education": "Doctoral degree",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Cuba": "Native",
+    "English": "Intermediate",
+    "Arabic": "Advanced"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 18,
+  "asylum_officer_id": "AO-6662",
+  "immigration_judge_id": "IJ-249"
+}

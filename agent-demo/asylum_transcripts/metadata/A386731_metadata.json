@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-09-09",
+  "decision_date": "2024-10-07",
+  "case_id": "A386731",
+  "applicant_gender": "non-binary",
+  "applicant_age": 53,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Healthcare",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Honduras",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": true,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 43,
+  "asylum_officer_id": "AO-7751",
+  "immigration_judge_id": "IJ-993"
+}

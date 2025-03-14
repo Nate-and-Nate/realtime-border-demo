@@ -1,0 +1,31 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Guatemala",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-07-01",
+  "decision_date": "2023-10-30",
+  "case_id": "A356801",
+  "applicant_gender": "male",
+  "applicant_age": 22,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Guatemala": "Native",
+    "English": "Intermediate",
+    "Spanish": "Fluent",
+    "French": "Advanced"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 5,
+  "years_in_origin_country": 19,
+  "asylum_officer_id": "AO-6870",
+  "immigration_judge_id": "IJ-369"
+}

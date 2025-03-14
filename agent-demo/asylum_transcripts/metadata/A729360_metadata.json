@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Afghanistan",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Administrative Closure",
+  "interview_date": "2023-02-14",
+  "decision_date": "2023-05-16",
+  "case_id": "A729360",
+  "applicant_gender": "male",
+  "applicant_age": 47,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Afghanistan": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Afghanistan",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 2,
+  "years_in_origin_country": 47,
+  "asylum_officer_id": "AO-4205",
+  "immigration_judge_id": null
+}

@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "El Salvador",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-06-11",
+  "decision_date": "2023-08-14",
+  "case_id": "A487482",
+  "applicant_gender": "male",
+  "applicant_age": 42,
+  "applicant_education": "No formal education",
+  "applicant_profession": "Education",
+  "languages": {
+    "El Salvador": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Cooperation with allied forces",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 33,
+  "asylum_officer_id": "AO-4693",
+  "immigration_judge_id": "IJ-342"
+}

@@ -1,0 +1,28 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-04-24",
+  "decision_date": "2023-07-27",
+  "case_id": "A933262",
+  "applicant_gender": "non-binary",
+  "applicant_age": 27,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Honduras": "Native"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "Honduras",
+  "special_consideration": "Prior legal status in country",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 26,
+  "asylum_officer_id": "AO-4684",
+  "immigration_judge_id": null
+}

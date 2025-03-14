@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "El Salvador",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-09-12",
+  "decision_date": "2025-01-01",
+  "case_id": "A895988",
+  "applicant_gender": "non-binary",
+  "applicant_age": 19,
+  "applicant_education": "No formal education",
+  "applicant_profession": "Legal",
+  "languages": {
+    "El Salvador": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 13,
+  "asylum_officer_id": "AO-2392",
+  "immigration_judge_id": null
+}

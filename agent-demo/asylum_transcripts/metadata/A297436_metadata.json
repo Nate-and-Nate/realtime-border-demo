@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Nicaragua",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-05-14",
+  "decision_date": "2024-08-10",
+  "case_id": "A297436",
+  "applicant_gender": "male",
+  "applicant_age": 50,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Unemployed",
+  "languages": {
+    "Nicaragua": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Critical skill shortage area",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 43,
+  "asylum_officer_id": "AO-7607",
+  "immigration_judge_id": null
+}

@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Cuba",
+  "grounds_for_persecution": "Nationality",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-05-02",
+  "decision_date": "2024-08-30",
+  "case_id": "A105985",
+  "applicant_gender": "male",
+  "applicant_age": 45,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Arts/Culture",
+  "languages": {
+    "Cuba": "Native",
+    "English": "Basic",
+    "Spanish": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Cuba",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 39,
+  "asylum_officer_id": "AO-8366",
+  "immigration_judge_id": null
+}

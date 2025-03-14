@@ -1,0 +1,31 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Iraq",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-04-17",
+  "decision_date": "2023-09-09",
+  "case_id": "A503602",
+  "applicant_gender": "female",
+  "applicant_age": 53,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Iraq": "Native",
+    "English": "Advanced",
+    "Spanish": "Basic",
+    "Portuguese": "Basic"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Cooperation with allied forces",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 4,
+  "years_in_origin_country": 46,
+  "asylum_officer_id": "AO-3211",
+  "immigration_judge_id": null
+}

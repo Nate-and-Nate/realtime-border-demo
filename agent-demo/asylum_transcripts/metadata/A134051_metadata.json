@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Venezuela",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Referred to Immigration Court",
+  "interview_date": "2023-10-05",
+  "decision_date": "2024-02-04",
+  "case_id": "A134051",
+  "applicant_gender": "non-binary",
+  "applicant_age": 58,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Arts/Culture",
+  "languages": {
+    "Venezuela": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 57,
+  "asylum_officer_id": "AO-1889",
+  "immigration_judge_id": null
+}

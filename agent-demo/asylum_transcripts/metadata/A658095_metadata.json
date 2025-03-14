@@ -1,0 +1,31 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Eritrea",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2022-09-05",
+  "decision_date": "2023-01-02",
+  "case_id": "A658095",
+  "applicant_gender": "male",
+  "applicant_age": 42,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "STEM",
+  "languages": {
+    "Eritrea": "Native",
+    "English": "Advanced",
+    "Mandarin": "Intermediate",
+    "French": "Basic"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Victim of trafficking",
+  "has_stem_background": true,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 36,
+  "asylum_officer_id": "AO-1856",
+  "immigration_judge_id": null
+}

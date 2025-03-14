@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Myanmar",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-10-18",
+  "decision_date": "2023-12-26",
+  "case_id": "A385891",
+  "applicant_gender": "male",
+  "applicant_age": 35,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Education",
+  "languages": {
+    "Myanmar": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Myanmar",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 33,
+  "asylum_officer_id": "AO-6148",
+  "immigration_judge_id": null
+}

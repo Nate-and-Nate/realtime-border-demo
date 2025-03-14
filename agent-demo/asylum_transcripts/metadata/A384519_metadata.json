@@ -1,0 +1,30 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Cameroon",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-05-05",
+  "decision_date": "2023-09-25",
+  "case_id": "A384519",
+  "applicant_gender": "male",
+  "applicant_age": 32,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "STEM",
+  "languages": {
+    "Cameroon": "Native",
+    "English": "Basic",
+    "Russian": "Advanced"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Cameroon",
+  "special_consideration": "Victim of trafficking",
+  "has_stem_background": true,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 22,
+  "asylum_officer_id": "AO-2285",
+  "immigration_judge_id": "IJ-943"
+}

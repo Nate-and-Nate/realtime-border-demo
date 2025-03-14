@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Nicaragua",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-08-09",
+  "decision_date": "2023-09-13",
+  "case_id": "A974751",
+  "applicant_gender": "female",
+  "applicant_age": 44,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Nicaragua": "Native",
+    "English": "Intermediate",
+    "Russian": "Fluent"
+  },
+  "english_proficiency": "Intermediate",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 36,
+  "asylum_officer_id": "AO-1682",
+  "immigration_judge_id": null
+}

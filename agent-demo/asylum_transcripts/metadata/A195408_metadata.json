@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Cuba",
+  "grounds_for_persecution": "Gender-based violence",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-07-02",
+  "decision_date": "2023-11-24",
+  "case_id": "A195408",
+  "applicant_gender": "male",
+  "applicant_age": 40,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Cuba": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 33,
+  "asylum_officer_id": "AO-2187",
+  "immigration_judge_id": null
+}

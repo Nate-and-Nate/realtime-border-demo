@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Colombia",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-09-21",
+  "decision_date": "2024-11-12",
+  "case_id": "A485753",
+  "applicant_gender": "male",
+  "applicant_age": 36,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Unemployed",
+  "languages": {
+    "Colombia": "Native",
+    "Portuguese": "Advanced"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "Colombia",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 35,
+  "asylum_officer_id": "AO-7415",
+  "immigration_judge_id": null
+}

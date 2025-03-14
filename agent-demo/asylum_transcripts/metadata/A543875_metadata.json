@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Nicaragua",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-03-25",
+  "decision_date": "2022-06-20",
+  "case_id": "A543875",
+  "applicant_gender": "non-binary",
+  "applicant_age": 32,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Nicaragua": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Nicaragua",
+  "special_consideration": "Prior legal status in country",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 2,
+  "years_in_origin_country": 24,
+  "asylum_officer_id": "AO-2836",
+  "immigration_judge_id": "IJ-874"
+}

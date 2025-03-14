@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Granted",
+  "interview_date": "2025-02-01",
+  "decision_date": "2025-04-27",
+  "case_id": "A731769",
+  "applicant_gender": "female",
+  "applicant_age": 24,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Prior legal status in country",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 23,
+  "asylum_officer_id": "AO-3218",
+  "immigration_judge_id": "IJ-504"
+}

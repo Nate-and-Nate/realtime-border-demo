@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Russia",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Referred to Immigration Court",
+  "interview_date": "2024-11-14",
+  "decision_date": "2025-04-09",
+  "case_id": "A614778",
+  "applicant_gender": "female",
+  "applicant_age": 39,
+  "applicant_education": "No formal education",
+  "applicant_profession": "Education",
+  "languages": {
+    "Russia": "Native",
+    "English": "Fluent",
+    "Spanish": "Basic"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 38,
+  "asylum_officer_id": "AO-1394",
+  "immigration_judge_id": null
+}

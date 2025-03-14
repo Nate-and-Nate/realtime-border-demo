@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Guatemala",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-04-19",
+  "decision_date": "2024-09-09",
+  "case_id": "A575010",
+  "applicant_gender": "female",
+  "applicant_age": 28,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Guatemala": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Guatemala",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 27,
+  "asylum_officer_id": "AO-8691",
+  "immigration_judge_id": null
+}

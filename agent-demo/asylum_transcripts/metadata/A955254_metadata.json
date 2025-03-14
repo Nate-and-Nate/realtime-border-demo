@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "China",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-01-21",
+  "decision_date": "2024-04-24",
+  "case_id": "A955254",
+  "applicant_gender": "male",
+  "applicant_age": 48,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Education",
+  "languages": {
+    "China": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 46,
+  "asylum_officer_id": "AO-2359",
+  "immigration_judge_id": "IJ-171"
+}

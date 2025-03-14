@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Haiti",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-06-03",
+  "decision_date": "2024-10-03",
+  "case_id": "A692183",
+  "applicant_gender": "non-binary",
+  "applicant_age": 45,
+  "applicant_education": "Master's degree",
+  "applicant_profession": "Education",
+  "languages": {
+    "Haiti": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 5,
+  "years_in_origin_country": 37,
+  "asylum_officer_id": "AO-1919",
+  "immigration_judge_id": "IJ-837"
+}

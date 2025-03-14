@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Cuba",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-02-06",
+  "decision_date": "2024-07-24",
+  "case_id": "A628542",
+  "applicant_gender": "non-binary",
+  "applicant_age": 23,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Unemployed",
+  "languages": {
+    "Cuba": "Native",
+    "French": "Intermediate"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "Cuba",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 20,
+  "asylum_officer_id": "AO-3568",
+  "immigration_judge_id": "IJ-664"
+}

@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Guatemala",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-12-06",
+  "decision_date": "2024-01-09",
+  "case_id": "A875974",
+  "applicant_gender": "non-binary",
+  "applicant_age": 21,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Education",
+  "languages": {
+    "Guatemala": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 3,
+  "years_in_origin_country": 13,
+  "asylum_officer_id": "AO-7620",
+  "immigration_judge_id": null
+}

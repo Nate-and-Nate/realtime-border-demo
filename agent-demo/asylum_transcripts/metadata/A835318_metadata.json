@@ -1,0 +1,29 @@
+{
+  "case_type": "Credible Fear Interview",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-06-25",
+  "decision_date": "2023-08-16",
+  "case_id": "A835318",
+  "applicant_gender": "non-binary",
+  "applicant_age": 54,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 47,
+  "asylum_officer_id": "AO-6996",
+  "immigration_judge_id": null
+}

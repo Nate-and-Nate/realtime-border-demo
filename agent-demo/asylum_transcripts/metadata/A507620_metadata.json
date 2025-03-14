@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Russia",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-02-08",
+  "decision_date": "2023-03-10",
+  "case_id": "A507620",
+  "applicant_gender": "male",
+  "applicant_age": 47,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Russia": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 46,
+  "asylum_officer_id": "AO-7100",
+  "immigration_judge_id": null
+}

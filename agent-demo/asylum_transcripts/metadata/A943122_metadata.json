@@ -1,0 +1,29 @@
+{
+  "case_type": "Credible Fear Interview",
+  "country_of_origin": "El Salvador",
+  "grounds_for_persecution": "Gender-based violence",
+  "decision_outcome": "Denied",
+  "interview_date": "2024-02-19",
+  "decision_date": "2024-05-10",
+  "case_id": "A943122",
+  "applicant_gender": "female",
+  "applicant_age": 62,
+  "applicant_education": "Master's degree",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "El Salvador": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 55,
+  "asylum_officer_id": "AO-1960",
+  "immigration_judge_id": null
+}

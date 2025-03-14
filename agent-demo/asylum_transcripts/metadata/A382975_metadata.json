@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Syria",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Administrative Closure",
+  "interview_date": "2024-03-18",
+  "decision_date": "2024-07-16",
+  "case_id": "A382975",
+  "applicant_gender": "non-binary",
+  "applicant_age": 41,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Healthcare",
+  "languages": {
+    "Syria": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": true,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 31,
+  "asylum_officer_id": "AO-6028",
+  "immigration_judge_id": null
+}

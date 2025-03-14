@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "China",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-02-25",
+  "decision_date": "2023-07-18",
+  "case_id": "A346716",
+  "applicant_gender": "non-binary",
+  "applicant_age": 50,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Healthcare",
+  "languages": {
+    "China": "Native",
+    "Arabic": "Fluent"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "China",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": true,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 42,
+  "asylum_officer_id": "AO-6267",
+  "immigration_judge_id": null
+}

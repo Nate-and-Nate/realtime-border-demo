@@ -1,0 +1,30 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "Nicaragua",
+  "grounds_for_persecution": "Nationality",
+  "decision_outcome": "Denied",
+  "interview_date": "2022-10-05",
+  "decision_date": "2023-02-18",
+  "case_id": "A499590",
+  "applicant_gender": "non-binary",
+  "applicant_age": 19,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Trades/Construction",
+  "languages": {
+    "Nicaragua": "Native",
+    "English": "Fluent",
+    "Mandarin": "Basic"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Critical skill shortage area",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 6,
+  "years_in_origin_country": 19,
+  "asylum_officer_id": "AO-5679",
+  "immigration_judge_id": "IJ-773"
+}

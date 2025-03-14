@@ -1,0 +1,29 @@
+{
+  "case_type": "Defensive Asylum",
+  "country_of_origin": "El Salvador",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-04-16",
+  "decision_date": "2022-09-21",
+  "case_id": "A230466",
+  "applicant_gender": "female",
+  "applicant_age": 36,
+  "applicant_education": "Master's degree",
+  "applicant_profession": "Education",
+  "languages": {
+    "El Salvador": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "El Salvador",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 6,
+  "years_in_origin_country": 27,
+  "asylum_officer_id": "AO-2772",
+  "immigration_judge_id": "IJ-283"
+}

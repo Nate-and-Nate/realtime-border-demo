@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Venezuela",
+  "grounds_for_persecution": "Political opinion",
+  "decision_outcome": "Denied",
+  "interview_date": "2023-04-17",
+  "decision_date": "2023-10-03",
+  "case_id": "A907452",
+  "applicant_gender": "female",
+  "applicant_age": 60,
+  "applicant_education": "No formal education",
+  "applicant_profession": "Unemployed",
+  "languages": {
+    "Venezuela": "Native",
+    "English": "Advanced",
+    "French": "Fluent"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 53,
+  "asylum_officer_id": "AO-5690",
+  "immigration_judge_id": null
+}

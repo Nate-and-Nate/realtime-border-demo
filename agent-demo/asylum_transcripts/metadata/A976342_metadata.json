@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Venezuela",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-07-05",
+  "decision_date": "2024-12-08",
+  "case_id": "A976342",
+  "applicant_gender": "non-binary",
+  "applicant_age": 24,
+  "applicant_education": "Master's degree",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Venezuela": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": "Prior legal status in country",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 23,
+  "asylum_officer_id": "AO-4888",
+  "immigration_judge_id": null
+}

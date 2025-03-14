@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "China",
+  "grounds_for_persecution": "Gender-based violence",
+  "decision_outcome": "Referred to Immigration Court",
+  "interview_date": "2022-10-29",
+  "decision_date": "2023-01-12",
+  "case_id": "A509432",
+  "applicant_gender": "male",
+  "applicant_age": 21,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Legal",
+  "languages": {
+    "China": "Native",
+    "English": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 12,
+  "asylum_officer_id": "AO-6775",
+  "immigration_judge_id": null
+}

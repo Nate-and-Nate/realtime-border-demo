@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Honduras",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Granted",
+  "interview_date": "2022-03-18",
+  "decision_date": "2022-06-03",
+  "case_id": "A547061",
+  "applicant_gender": "female",
+  "applicant_age": 47,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Business/Finance",
+  "languages": {
+    "Honduras": "Native",
+    "English": "Fluent",
+    "French": "Fluent"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 5,
+  "years_in_origin_country": 44,
+  "asylum_officer_id": "AO-5365",
+  "immigration_judge_id": null
+}

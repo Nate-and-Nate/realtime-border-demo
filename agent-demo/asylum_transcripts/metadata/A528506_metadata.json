@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Sudan",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Denied",
+  "interview_date": "2022-08-26",
+  "decision_date": "2022-10-07",
+  "case_id": "A528506",
+  "applicant_gender": "non-binary",
+  "applicant_age": 44,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Healthcare",
+  "languages": {
+    "Sudan": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Sudan",
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": true,
+  "has_legal_representation": true,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 41,
+  "asylum_officer_id": "AO-2878",
+  "immigration_judge_id": null
+}

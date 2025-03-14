@@ -1,0 +1,29 @@
+{
+  "case_type": "Credible Fear Interview",
+  "country_of_origin": "Guatemala",
+  "grounds_for_persecution": "Nationality",
+  "decision_outcome": "Withdrawn",
+  "interview_date": "2025-02-15",
+  "decision_date": "2025-03-23",
+  "case_id": "A841590",
+  "applicant_gender": "non-binary",
+  "applicant_age": 59,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Agriculture/Farming",
+  "languages": {
+    "Guatemala": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Guatemala",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 57,
+  "asylum_officer_id": "AO-1330",
+  "immigration_judge_id": null
+}

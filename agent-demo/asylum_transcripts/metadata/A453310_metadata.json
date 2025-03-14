@@ -1,0 +1,30 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Syria",
+  "grounds_for_persecution": "Religion",
+  "decision_outcome": "Referred to Immigration Court",
+  "interview_date": "2023-01-25",
+  "decision_date": "2023-05-09",
+  "case_id": "A453310",
+  "applicant_gender": "male",
+  "applicant_age": 35,
+  "applicant_education": "Doctoral degree",
+  "applicant_profession": "Legal",
+  "languages": {
+    "Syria": "Native",
+    "English": "Fluent",
+    "Arabic": "Basic"
+  },
+  "english_proficiency": "Fluent",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 2,
+  "years_in_origin_country": 30,
+  "asylum_officer_id": "AO-2718",
+  "immigration_judge_id": null
+}

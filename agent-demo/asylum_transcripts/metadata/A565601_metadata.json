@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Nicaragua",
+  "grounds_for_persecution": "Membership in a particular social group",
+  "decision_outcome": "Granted",
+  "interview_date": "2024-08-03",
+  "decision_date": "2024-11-17",
+  "case_id": "A565601",
+  "applicant_gender": "non-binary",
+  "applicant_age": 57,
+  "applicant_education": "Primary education",
+  "applicant_profession": "STEM",
+  "languages": {
+    "Nicaragua": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "Nicaragua",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": true,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": false,
+  "family_size": 1,
+  "years_in_origin_country": 52,
+  "asylum_officer_id": "AO-8111",
+  "immigration_judge_id": null
+}

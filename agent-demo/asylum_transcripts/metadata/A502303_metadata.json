@@ -1,0 +1,31 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "Iraq",
+  "grounds_for_persecution": "LGBTQ+ identity",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-04-17",
+  "decision_date": "2023-05-16",
+  "case_id": "A502303",
+  "applicant_gender": "non-binary",
+  "applicant_age": 50,
+  "applicant_education": "Bachelor's degree",
+  "applicant_profession": "Service Industry",
+  "languages": {
+    "Iraq": "Native",
+    "French": "Advanced",
+    "Spanish": "Fluent",
+    "Russian": "Basic"
+  },
+  "english_proficiency": "None",
+  "interpreter_needed": true,
+  "interpreter_language": "Iraq",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 47,
+  "asylum_officer_id": "AO-5202",
+  "immigration_judge_id": null
+}

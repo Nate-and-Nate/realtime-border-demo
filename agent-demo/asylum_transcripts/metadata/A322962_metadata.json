@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "El Salvador",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Granted",
+  "interview_date": "2023-03-20",
+  "decision_date": "2023-05-15",
+  "case_id": "A322962",
+  "applicant_gender": "male",
+  "applicant_age": 46,
+  "applicant_education": "Secondary education",
+  "applicant_profession": "Legal",
+  "languages": {
+    "El Salvador": "Native",
+    "English": "Basic"
+  },
+  "english_proficiency": "Basic",
+  "interpreter_needed": true,
+  "interpreter_language": "El Salvador",
+  "special_consideration": "Family ties to citizens",
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": true,
+  "has_dependent_family_members": true,
+  "family_size": 3,
+  "years_in_origin_country": 43,
+  "asylum_officer_id": "AO-5478",
+  "immigration_judge_id": null
+}

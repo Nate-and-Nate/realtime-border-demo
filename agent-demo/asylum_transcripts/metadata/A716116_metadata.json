@@ -1,0 +1,29 @@
+{
+  "case_type": "Affirmative Asylum",
+  "country_of_origin": "China",
+  "grounds_for_persecution": "Race",
+  "decision_outcome": "Denied",
+  "interview_date": "2022-09-21",
+  "decision_date": "2023-03-07",
+  "case_id": "A716116",
+  "applicant_gender": "male",
+  "applicant_age": 21,
+  "applicant_education": "Primary education",
+  "applicant_profession": "Government/Military",
+  "languages": {
+    "China": "Native",
+    "English": "Advanced"
+  },
+  "english_proficiency": "Advanced",
+  "interpreter_needed": false,
+  "interpreter_language": null,
+  "special_consideration": null,
+  "has_stem_background": false,
+  "has_healthcare_background": false,
+  "has_legal_representation": false,
+  "has_dependent_family_members": true,
+  "family_size": 1,
+  "years_in_origin_country": 12,
+  "asylum_officer_id": "AO-6523",
+  "immigration_judge_id": null
+}
