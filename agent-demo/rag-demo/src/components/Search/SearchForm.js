@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { semanticSearch } from '../../services/aiService';
 
 const SearchForm = ({ onSearchResults }) => {
   const [query, setQuery] = useState('');
@@ -32,7 +31,7 @@ const SearchForm = ({ onSearchResults }) => {
   const handleSearch = async (e) => {
     e.preventDefault();
     
-    if (!query.trim()) {
+    if (!query || !query.trim()) {
       setError('Please enter a search query');
       return;
     }
@@ -41,11 +40,8 @@ const SearchForm = ({ onSearchResults }) => {
       setLoading(true);
       setError(null);
       
-      // Perform semantic search through AI service
-      const results = await semanticSearch(query);
-      
-      // Pass results to parent component
-      onSearchResults(results, query, filters);
+      // Pass the query string and filters to parent component
+      onSearchResults(query.trim(), filters);
     } catch (err) {
       console.error('Error performing search:', err);
       setError('Failed to perform search. Please try again.');

@@ -30,7 +30,7 @@ function App() {
     const fetchInitialData = async () => {
       try {
         setLoading(true);
-        const recentCases = await getRecentCases(20); // Get 20 most recent cases
+        const recentCases = await getRecentCases(50); // Get 20 most recent cases
         setCasesMetadata(recentCases);
       } catch (err) {
         console.error('Error fetching initial data:', err);

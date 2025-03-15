@@ -1,18 +1,16 @@
 /**
  * AI Service for asylum processing demo
  * 
- * This service handles interactions with AI models (OpenAI and Google's Gemini)
+ * This service handles interactions with AI models (OpenAI)
  * for various features of the application.
  */
 
-// For a real application, you would need to set up your API keys securely
-// For this demo, we'll use placeholder values
-const OPENAI_API_KEY = "your-openai-api-key";
-const GEMINI_API_KEY = "your-gemini-api-key";
-
-// Base URLs for AI APIs
-const OPENAI_BASE_URL = "https://api.openai.com/v1";
-const GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai";
+// For a real application, API endpoints for Cloud Functions
+const FUNCTION_URLS = {
+  SUMMARY_URL: "https://generate-summary-73s3dsgldq-uc.a.run.app",
+  SEARCH_URL: " https://semantic-search-73s3dsgldq-uc.a.run.app",
+  DISCREPANCY_URL: "https://us-central1-your-project-id.cloudfunctions.net/analyze_discrepancies"
+};
 
 /**
  * Generates a summary of an asylum interview transcript
@@ -24,11 +22,8 @@ export const generateInterviewSummary = async (transcript, metadata) => {
   try {
     console.log("Generating summary for case: ", metadata.case_id);
     
-    // Cloud function URL - replace with your actual URL after deployment
-    const functionUrl = "https://us-central1-border-demo-70326.cloudfunctions.net/generate_summary";
-    
     // Call the cloud function
-    const response = await fetch(functionUrl, {
+    const response = await fetch(FUNCTION_URLS.SUMMARY_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -66,46 +61,81 @@ export const generateInterviewSummary = async (transcript, metadata) => {
 };
 
 /**
- * Performs semantic search across interview transcripts and summaries
+ * Performs semantic search across interview transcripts and summaries using RAG
  * @param {string} query - The search query
+ * @param {Object} filters - Optional filters for the search
  * @returns {Promise<Array>} Search results
  */
-export const semanticSearch = async (query) => {
+export const semanticSearch = async (query, filters = {}) => {
   try {
-    console.log("Performing semantic search for:", query);
+    console.log("Performing semantic search for:", query, "with filters:", filters);
     
-    // In a real implementation, this would be a call to your RAG system in Firebase Cloud Functions
-    // For this demo, we'll simulate the results
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Call the RAG search cloud function
+    const response = await fetch(FUNCTION_URLS.SEARCH_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query,
+        filters
+      })
+    });
     
-    // Mock search results
-    return [
-      {
-        caseId: "A123456",
-        score: 0.92,
-        snippet: "The applicant described fleeing due to political persecution after participating in protests against the government.",
-        metadataMatch: "Political opinion persecution",
-        highlights: ["political persecution", "protests", "government"]
-      },
-      {
-        caseId: "A789012",
-        score: 0.87,
-        snippet: "The asylum seeker testified about government officials threatening them after they spoke at opposition rallies.",
-        metadataMatch: "Political opinion persecution",
-        highlights: ["government officials", "threatening", "opposition rallies"]
-      },
-      {
-        caseId: "A345678",
-        score: 0.81,
-        snippet: "The claimant was forced to flee after receiving death threats for their political activities.",
-        metadataMatch: "Political opinion persecution",
-        highlights: ["death threats", "political activities"]
-      }
-    ];
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`API Error: ${errorData.error || response.statusText}`);
+    }
+    
+    const data = await response.json();
+    
+    // Add additional client-side formatting for results display
+    const enhancedResults = data.results.map(result => ({
+      ...result,
+      // Format snippet for display by highlighting search terms
+      formattedSnippet: highlightSearchTerms(result.snippet, result.highlights)
+    }));
+    
+    return {
+      query: data.query,
+      results: enhancedResults,
+      response: data.response,
+      resultCount: data.resultCount
+    };
   } catch (error) {
     console.error("Error performing semantic search:", error);
-    throw new Error("Failed to perform semantic search");
+    
+    // Return empty results for UI to handle
+    return {
+      query,
+      results: [],
+      response: `Search failed: ${error.message}. Please try again later.`,
+      resultCount: 0
+    };
   }
+};
+
+/**
+ * Helper function to highlight search terms in text
+ * @param {string} text - Text to highlight
+ * @param {Array<string>} terms - Terms to highlight
+ * @returns {string} HTML with highlighted terms
+ */
+const highlightSearchTerms = (text, terms) => {
+  if (!terms || terms.length === 0 || !text) return text;
+  
+  let highlightedText = text;
+  const escapedTerms = terms.map(term => 
+    term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') // Escape regex special chars
+  );
+  
+  // Create regex that matches any of the terms (case insensitive)
+  const regex = new RegExp(`(${escapedTerms.join('|')})`, 'gi');
+  
+  // Replace matches with highlighted spans
+  highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
+  
+  return highlightedText;
 };
 
 /**

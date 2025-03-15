@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const SummaryDisplay = ({ summary, caseMetadata }) => {
   if (!summary) return null;
@@ -62,7 +63,7 @@ const SummaryDisplay = ({ summary, caseMetadata }) => {
           <h4 className="text-sm font-medium text-gray-500">Summary</h4>
           <div className="mt-2 p-4 bg-gray-50 rounded-md border border-gray-200">
             <div className="text-sm text-gray-900 whitespace-pre-line">
-              {summary.summary}
+              <ReactMarkdown>{summary.summary}</ReactMarkdown>
             </div>
           </div>
         </div>
