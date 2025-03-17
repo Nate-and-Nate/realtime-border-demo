@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 
 const SearchResults = ({ searchData, query, filters }) => {
   const [expandedCase, setExpandedCase] = useState(null);
@@ -113,9 +114,7 @@ const SearchResults = ({ searchData, query, filters }) => {
         <div className="px-4 py-4 sm:px-6 bg-blue-50 border-b border-blue-200">
           <h4 className="text-sm font-medium text-blue-800 mb-2">AI Assistant Summary</h4>
           <div className="text-sm text-gray-700 prose max-w-none">
-            {response.split('\n').map((paragraph, i) => (
-              <p key={i} className={i > 0 ? "mt-2" : ""}>{paragraph}</p>
-            ))}
+            <ReactMarkdown>{response}</ReactMarkdown>
           </div>
         </div>
       )}

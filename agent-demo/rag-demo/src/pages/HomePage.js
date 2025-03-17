@@ -80,7 +80,7 @@ const HomePage = () => {
     <div>
       <div className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">AsylumAI Demo</h1>
+          <h1 className="text-3xl font-bold text-gray-900">Accelerating Asylum Demo</h1>
           <p className="mt-2 text-gray-600">
             Showcasing how AI can enhance the asylum processing system
           </p>

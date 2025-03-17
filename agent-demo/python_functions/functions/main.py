@@ -370,7 +370,7 @@ def generate_search_response(query, similar_chunks):
         
         system_prompt = """You are an expert immigration analyst helping with asylum case research. 
         You are given a search query and relevant excerpts from asylum interview transcripts. 
-        Provide a helpful, concise response that directly addresses the search query using information found in the provided excerpts.
+        Provide a helpful, concise response IN MARKDOWN that directly addresses the search query using information found in the provided excerpts.
         
         Only use information that is explicitly present in the provided context. If the context doesn't contain information relevant to the query, acknowledge this limitation.
         

@@ -25,7 +25,7 @@ const Navbar = () => {
                   <line x1="12" y1="8" x2="12" y2="12"></line>
                   <line x1="12" y1="16" x2="12.01" y2="16"></line>
                 </svg>
-                <span className="font-bold text-xl text-gray-900">AsylumAI Demo</span>
+                <span className="font-bold text-xl text-gray-900">Accelerating Asylum Demo</span>
               </Link>
             </div>
           </div>
