@@ -123,7 +123,7 @@ const SearchForm = ({ onSearchResults }) => {
             </div>
           </div>
           
-          <div className="mt-3">
+          {/* <div className="mt-3">
             <button
               type="button"
               className="text-sm text-blue-600 hover:text-blue-500 focus:outline-none"
@@ -131,7 +131,7 @@ const SearchForm = ({ onSearchResults }) => {
             >
               {advanced ? 'Hide advanced filters' : 'Show advanced filters'}
             </button>
-          </div>
+          </div> */}
           
           {advanced && (
             <div className="mt-4 grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-4">
